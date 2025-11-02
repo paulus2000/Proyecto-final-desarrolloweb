@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "title": "Concierto de Verano",
+    "description": "Una noche de música en vivo con artistas locales.",
+    "date": "2025-12-15T20:00:00",
+    "location": "Auditorio Central",
+    "capacity": 200,
+    "price": 15.0,
+    "image": "/assets/event1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Feria de Tecnología",
+    "description": "Exposición de proyectos y charlas sobre desarrollo web.",
+    "date": "2025-11-30T10:00:00",
+    "location": "Centro de Convenciones",
+    "capacity": 500,
+    "price": 0.0,
+    "image": "/assets/event2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Taller de Fotografía",
+    "description": "Aprende composición y edición en un taller práctico.",
+    "date": "2025-12-05T16:00:00",
+    "location": "Sala Creativa",
+    "capacity": 30,
+    "price": 25.0,
+    "image": "/assets/event3.jpg"
+  }
+,
+  {
+    "id": 4,
+    "title": "Mercado Nocturno",
+    "description": "Artesanías, comida y música en un ambiente familiar.",
+    "date": "2025-11-20T18:00:00",
+    "location": "Plaza Mayor",
+    "capacity": 350,
+    "price": 0.0,
+    "image": "/assets/event4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Charla: Desarrollo Web",
+    "description": "Ponencias sobre tendencias y buenas prácticas en frontend.",
+    "date": "2025-11-22T17:00:00",
+    "location": "Aula Magna",
+    "capacity": 120,
+    "price": 5.0,
+    "image": "/assets/event5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Noche de Teatro",
+    "description": "Obra local con entrada reducida para estudiantes.",
+    "date": "2025-12-01T19:30:00",
+    "location": "Teatro Municipal",
+    "capacity": 220,
+    "price": 10.0,
+    "image": "/assets/event6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Maratón de Lectura",
+    "description": "Lecturas continuas y actividades para amantes de los libros.",
+    "date": "2025-11-28T09:00:00",
+    "location": "Biblioteca Central",
+    "capacity": 80,
+    "price": 0.0,
+    "image": "/assets/event7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Clase de Cocina Vegana",
+    "description": "Aprende recetas rápidas y deliciosas con ingredientes naturales.",
+    "date": "2025-12-10T11:00:00",
+    "location": "Cocina Comunitaria",
+    "capacity": 24,
+    "price": 20.0,
+    "image": "/assets/event8.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Exposición de Arte Local",
+    "description": "Galería con obras de artistas emergentes de la región.",
+    "date": "2025-11-18T10:00:00",
+    "location": "Galería Central",
+    "capacity": 150,
+    "price": 3.0,
+    "image": "/assets/event9.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Encuentro de Startups",
+    "description": "Pitchs, networking y talleres para emprendedores.",
+    "date": "2025-12-03T09:30:00",
+    "location": "Centro de Innovación",
+    "capacity": 200,
+    "price": 12.5,
+    "image": "/assets/event10.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Cine al Aire Libre",
+    "description": "Proyección de películas clásicas con palomitas.",
+    "date": "2025-11-25T20:00:00",
+    "location": "Parque Central",
+    "capacity": 400,
+    "price": 2.0,
+    "image": "/assets/event11.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Concurso de Fotografía",
+    "description": "Participa y muestra tu visión en diferentes categorías.",
+    "date": "2025-12-12T14:00:00",
+    "location": "Centro Cultural",
+    "capacity": 60,
+    "price": 8.0,
+    "image": "/assets/event12.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Fiesta de Fin de Año",
+    "description": "Celebración con música, comida y fuegos artificiales.",
+    "date": "2025-12-31T22:00:00",
+    "location": "Playa Norte",
+    "capacity": 1000,
+    "price": 30.0,
+    "image": "/assets/event13.jpg"
+  }
+,
+  {
+    "id": 14,
+    "title": "Hackathon Universitario",
+    "description": "Equipo multidisciplinario compitiendo por premios y mentorías.",
+    "date": "2025-11-14T09:00:00",
+    "location": "Campus Tech",
+    "capacity": 300,
+    "price": 0.0,
+    "image": "/assets/event14.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Concierto Indie",
+    "description": "Bandas emergentes en una velada íntima.",
+    "date": "2025-11-21T21:00:00",
+    "location": "Sala Luna",
+    "capacity": 180,
+    "price": 18.0,
+    "image": "/assets/event15.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Yoga al Amanecer",
+    "description": "Clase abierta en la playa para conectar cuerpo y mente.",
+    "date": "2025-11-16T06:30:00",
+    "location": "Playa Sur",
+    "capacity": 60,
+    "price": 4.0,
+    "image": "/assets/event16.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Torneo de Ajedrez",
+    "description": "Competencia por categorías con árbitros oficiales.",
+    "date": "2025-12-07T10:00:00",
+    "location": "Sala de Juegos",
+    "capacity": 120,
+    "price": 6.0,
+    "image": "/assets/event17.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Festival Gastronómico",
+    "description": "Muestra de food trucks y chefs invitados.",
+    "date": "2025-11-29T12:00:00",
+    "location": "Av. Principal",
+    "capacity": 800,
+    "price": 0.0,
+    "image": "/assets/event18.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Clínica de Baloncesto",
+    "description": "Entrenamientos y prácticas para jóvenes deportistas.",
+    "date": "2025-12-08T15:00:00",
+    "location": "Polideportivo",
+    "capacity": 100,
+    "price": 10.0,
+    "image": "/assets/event19.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Feria del Libro Infantil",
+    "description": "Actividades, cuentacuentos y talleres para niños.",
+    "date": "2025-11-19T10:00:00",
+    "location": "Parque de Lectura",
+    "capacity": 250,
+    "price": 0.0,
+    "image": "/assets/event20.jpg"
+  },
+  {
+    "id": 21,
+    "title": "Conferencia de Diseño UX",
+    "description": "Charlas y talleres sobre experiencia de usuario y prototipado.",
+    "date": "2025-12-02T09:00:00",
+    "location": "Auditorio Diseño",
+    "capacity": 140,
+    "price": 20.0,
+    "image": "/assets/event21.jpg"
+  },
+  {
+    "id": 22,
+    "title": "Cata de Vinos",
+    "description": "Degustación guiada por sommeliers locales.",
+    "date": "2025-12-11T19:00:00",
+    "location": "Bodega Central",
+    "capacity": 50,
+    "price": 35.0,
+    "image": "/assets/event22.jpg"
+  },
+  {
+    "id": 23,
+    "title": "Ruta de Senderismo",
+    "description": "Excursión de día completo con guías certificados.",
+    "date": "2025-11-23T07:00:00",
+    "location": "Reserva Natural",
+    "capacity": 40,
+    "price": 12.0,
+    "image": "/assets/event23.jpg"
+  },
+  {
+    "id": 24,
+    "title": "Mercado de Diseño",
+    "description": "Espacio para diseñadores independientes y emprendimientos creativos.",
+    "date": "2025-12-06T11:00:00",
+    "location": "Centro Creativo",
+    "capacity": 220,
+    "price": 0.0,
+    "image": "/assets/event24.jpg"
+  },
+  {
+    "id": 25,
+    "title": "Concierto de Música Clásica",
+    "description": "Orquesta sinfónica interpretando obras emblemáticas.",
+    "date": "2025-12-20T20:00:00",
+    "location": "Sala Mayor",
+    "capacity": 600,
+    "price": 22.0,
+    "image": "/assets/event25.jpg"
+  }
+]

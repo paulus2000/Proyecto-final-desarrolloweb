@@ -1,0 +1,25 @@
+.event-card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #f8fbff 0%, #f2f8ff 100%);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 34px rgba(9, 30, 54, 0.08);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+  border: 1px solid rgba(7, 30, 60, 0.06);
+}
+.event-card:hover { transform: translateY(-6px); box-shadow: 0 24px 44px rgba(9,30,54,0.14) }
+.carousel-item.active .event-card { transform: translateY(-8px) scale(1.04); box-shadow: 0 34px 60px rgba(9,30,54,0.18) }
+.event-image { width: 100%; height: 200px; object-fit: cover; background: linear-gradient(135deg,#e6f0ff 0%, #eef6ff 100%) }
+.event-body { padding: 1rem; text-align: left }
+.event-title { font-size: 1.05rem; margin: 0 0 6px; color: #06283d }
+.event-desc { color: #263740; font-size: 0.95rem; margin: 0 0 8px }
+.event-meta { font-size: 0.9rem; color: #475569; margin-bottom: 8px }
+.event-actions { margin-top: 8px; display:flex; gap:8px }
+.btn { padding: 0.5rem 0.75rem; border: none; border-radius: 8px; cursor: pointer; font-weight: 700 }
+.btn-primary { background: linear-gradient(90deg,#044ea2,#0b66c3); color: #fff; box-shadow: 0 10px 26px rgba(4,78,162,0.16) }
+.btn-ghost { background: rgba(255,255,255,0.95); border: 1px solid rgba(7,30,60,0.06); color:#06283d }
+
+.badge { display:inline-block; padding:6px 8px; border-radius:999px; background:#eef6ff; border:1px solid rgba(7,30,60,0.04); font-size:0.8rem; color:#044ea2 }
+.meta-row { display:flex; justify-content:space-between; align-items:center; gap:8px }
+

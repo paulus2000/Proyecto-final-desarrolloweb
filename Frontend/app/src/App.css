@@ -1,0 +1,103 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* App layout */
+.app-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+  padding-right: calc(1rem + var(--scrollbar-space, 0px));
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #222;
+}
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.app-header h1 { margin: 0; }
+.app-header nav a { margin-left: 0.5rem; text-decoration: none; color: #044ea2; font-weight:600 }
+.app-footer { text-align: center; margin: 2rem 0; color: #475569 }
+
+.page h2 { margin-top: 0; color: #06283d }
+.event-list { display: grid; grid-template-columns: repeat(auto-fill,minmax(280px,1fr)); gap: 1rem; }
+
+/* Theme - increased contrast */
+body {
+  background: radial-gradient(700px 420px at 7% 7%, rgba(4,78,162,0.06) 0%, transparent 18%),
+              linear-gradient(180deg,#eef5fb 0%, #eaf6ff 100%);
+  -webkit-font-smoothing:antialiased;
+  color: #0b1720;
+}
+
+/* utility */
+.page { padding: 1rem 0 }
+
+/* Hide main page horizontal scrollbar and optionally hide native scrollbars visually
+   - keep vertical scrolling functional but avoid showing the native scrollbar UI
+   - overflow-x hidden prevents accidental horizontal scroll caused by wide elements */
+html, body, #root {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+  /* Prefer hiding scrollbar where supported */
+  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Visual hiding of scrollbars while preserving scrolling behavior */
+body {
+  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar { width: 0 !important; height: 0 !important; }
+
+/* Reserve stable scrollbar gutter to avoid layout shifts (modern browsers) */
+html, body { scrollbar-gutter: stable both-edges; }
+
+/* Ensure the main container doesn't add any dividing border */
+.app-container { background: transparent; }
+
+

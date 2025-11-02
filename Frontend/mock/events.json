@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Concierto de Verano",
+    "description": "Una noche de música en vivo con artistas locales.",
+    "date": "2025-12-15T20:00:00",
+    "location": "Auditorio Central",
+    "capacity": 200,
+    "price": 15.0,
+    "image": "/assets/event1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Feria de Tecnología",
+    "description": "Exposición de proyectos y charlas sobre desarrollo web.",
+    "date": "2025-11-30T10:00:00",
+    "location": "Centro de Convenciones",
+    "capacity": 500,
+    "price": 0.0,
+    "image": "/assets/event2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Taller de Fotografía",
+    "description": "Aprende composición y edición en un taller práctico.",
+    "date": "2025-12-05T16:00:00",
+    "location": "Sala Creativa",
+    "capacity": 30,
+    "price": 25.0,
+    "image": "/assets/event3.jpg"
+  }
+]
