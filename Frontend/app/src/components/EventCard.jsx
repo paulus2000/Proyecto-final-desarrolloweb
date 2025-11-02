@@ -2,9 +2,15 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Swal from 'sweetalert2'
 import './EventCard.css'
+import { API } from '../services/api'
 
 export default function EventCard({ event }) {
-  const [registered, setRegistered] = useState(false)
+  const [registered, setRegistered] = useState(!!event.is_registered)
+
+  function ensureAuth() {
+    const token = localStorage.getItem('apiToken')
+    return !!token
+  }
 
   const handleRegister = async () => {
     const result = await Swal.fire({
@@ -16,8 +22,17 @@ export default function EventCard({ event }) {
     })
 
     if (result.isConfirmed) {
-      setRegistered(true)
-      Swal.fire('Listo', 'Te has registrado correctamente.', 'success')
+      if (!ensureAuth()) {
+        Swal.fire('Necesitas iniciar sesión', 'Por favor inicia sesión antes de registrarte.', 'warning')
+        return
+      }
+      try {
+        await API.post(`events/${event.id}/register/`)
+        setRegistered(true)
+        Swal.fire('Listo', 'Te has registrado correctamente.', 'success')
+      } catch (err) {
+        Swal.fire('Error', err.response?.data?.detail || err.message, 'error')
+      }
     }
   }
 
@@ -31,8 +46,17 @@ export default function EventCard({ event }) {
     })
 
     if (result.isConfirmed) {
-      setRegistered(false)
-      Swal.fire('Cancelado', 'Tu registro ha sido cancelado.', 'info')
+      if (!ensureAuth()) {
+        Swal.fire('Necesitas iniciar sesión', 'Por favor inicia sesión antes de cancelar.', 'warning')
+        return
+      }
+      try {
+        await API.post(`events/${event.id}/cancel/`)
+        setRegistered(false)
+        Swal.fire('Cancelado', 'Tu registro ha sido cancelado.', 'info')
+      } catch (err) {
+        Swal.fire('Error', err.response?.data?.detail || err.message, 'error')
+      }
     }
   }
 
@@ -52,6 +76,9 @@ export default function EventCard({ event }) {
         <p className="event-desc">{event.description}</p>
         <div className="meta-row">
           <p className="event-meta">{new Date(event.date).toLocaleString()} — {event.location}</p>
+          {event.creator && (
+            <div style={{marginLeft:12, fontSize:12, color:'#444'}}>Creado por: {event.creator.username}</div>
+          )}
           <div>
             <span className="badge">Entradas: {event.capacity}</span>
             <span style={{marginLeft:8}} className="badge">{event.price === 0 ? 'Gratis' : `$${event.price}`}</span>
